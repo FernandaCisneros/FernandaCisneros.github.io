@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+*{
+    margin: 0;
+}
+nav{
+    background-color: rgb(187, 142, 74);
+}
+
+.menu{
+    text-align: center;
+    margin: 0;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu a{
+    padding: 70px; /*separar los bloques*/
+    color: bisque;
+    text-decoration: none;
+    display: block;
+}
+
+.menu a:hover{
+    background-color: rgb(128, 56, 170);
+}
+
+.entrada{
+    color: rgb(5, 4, 5);
+    text-align: center;
+    overflow: hidden; /*quitar el espacio superior*/
+}
+
+.textotabla{
+    margin: 20px 30px 20px 50px;
+    background-color: blueviolet;
+    
+} 
+
+.parrafo1{
+    margin: 20px;
+    letter-spacing: 0ch;
+    background-color:azure;
+}
+
+.parrafo2{
+    margin: 20px;
+    letter-spacing: 0ch;
+    background-color: azure;
+}
+
+.entrada h1{
+    margin-top: 20px;
+    font-size: 60px;
+
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(/imagen/5ff4a5917c2c83fd3aff05a557ca108b.jpg);
+    background-size: 99%;
+}
+
+.tabla{
+    width: 800px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.pie{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: bisque;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.tbpaises{
+    text-align: center;
+    background-color: brown;
+}
+
+.tbcapitales{
+    text-align: center;
+    background-color: brown;
+}
+
+tr{
+    text-align: center 20px;
+    background-color: aliceblue;
+    
+}
