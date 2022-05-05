@@ -17,7 +17,7 @@ nav{
 }
 
 .menu a{
-    padding: 70px; /*separar los bloques*/
+    padding: 70px;     /*separar los bloques*/
     color: bisque;
     text-decoration: none;
     display: block;
