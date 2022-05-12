@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+}
+body{
+    background-image: url(/imagen/2203110250ad3357165a6a8fe1ee60b9.jpeg);
+    background-size: 90%;
+}
+
+.encabezado{
+    text-align: center;
+    font-size: 80px;
+    color: rgb(12, 2, 17);
+    background-color: #4d15a881;
+    font-family:cursive;
+    font-weight: bold;
+    color:rgb(49, 30, 6);
+    text-shadow: -3px 0 rgb(194, 161, 161), 
+    0 3px rgb(194, 161, 161), 
+    3px 0 rgb(194, 161, 161), 
+    0 -3px rgb(194, 161, 161);
+}
+
+nav{
+    text-align: center;
+    margin: 0%;
+}
+
+.principal > li{
+    float: left;
+    text-decoration: none;
+}
+
+.principal a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ul{
+    list-style: none;
+}
+
+.principal li a {
+    background: rgb(118, 10, 151);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 16px 12px;
+    display: block;
+    text-shadow: -1px 0 rgb(255, 255, 255), 
+    0 1px rgb(255, 255, 255), 
+    1px 0 rgb(255, 255, 255), 
+    0 -1px rgb(255, 255, 255);
+}
+
+.principal li a:hover{
+    background-color: darkkhaki;
+}
+
+.principal li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.principal li:hover > ul{
+    display: block;
+}
+
+p{
+    background-color: rgb(28, 112, 133);
+    padding: 70px;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px 12px;
+    margin: 40px;
+}
+
+.textotabla{
+    font-size: 30px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: darkgoldenrod;
+    margin: 0px 150px 0px 150px;
+}
+
+table{
+    width: 80%;
+    border-spacing: 0;
+}
+
+.tbpaises{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:black;
+    background-color: coral;   
+    font-size: 25px; 
+    font-weight: bold;
+}
+
+.tbcapitales{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:black;
+    background-color: coral;  
+    font-size: 25px;
+    font-weight: bold;
+}
+
+tr,td{
+    background-color: bisque;
+    padding: 5px;
+    width: 25px;
+    text-align: center;
+    border: 1px solid rgb(7, 4, 15); 
+    vertical-align: top;
+}
+
+caption{
+    border: 1px solid rgb(8, 2, 2);
+    padding: 5px;
+}
+
+.nombre{
+    background-color: darkslateblue;
+    color: antiquewhite;
+    text-align: center
+}
+
+
+
