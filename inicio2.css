@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+*{
+    margin: 0;
+}
+
+nav{
+    background-color: rgb(190, 139, 44);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu{
+    text-align: center;
+    margin: 0;
+}
+
+.menu li{
+    display:inline-block;
+    font-size: 27px;
+    color: brown;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.menu a{
+    padding: 20px;
+    color: rgb(255, 240, 225);
+    text-decoration: none;
+    display: block;
+    
+}
+
+.menu a:hover{
+    background-color: rgb(156, 80, 122);
+}
+
+
+.entrada{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    overflow: hidden; /*quitar el espacio superior*/
+}
+
+.textotabla{
+    margin: 20px 30px 20px 50px;
+    background-color: blueviolet;
+    
+} 
+
+
+.parrafo1{
+    margin: 20px;
+    letter-spacing: 0ch;
+    background-color:azure;
+    
+    text-align: center;
+}
+
+.parrafo2{
+    margin: 20px 0px 20px;
+    letter-spacing: 0ch;
+    background-color: azure;
+    
+}
+
+.entrada h1{
+    margin-top: 20px;
+    font-size: 90px;
+    color: rgb(15, 58, 139);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 5px 5px 5px rgb(255, 240, 225);
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(/imagen/imagen/2203110250ad3357165a6a8fe1ee60b9.jpeg);
+    background-size: 99%;
+}
+
+.tabla{
+    width: 800px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.pie{
+    
+    text-align: center;
+    color: rgb(221, 214, 214);
+    background-color: brown;
+    margin: 25px 500px ;
+    
+    
+
+}
+
+.tbpaises{
+    text-align: center;
+    background-color: brown;
+}
+
+.tbcapitales{
+    text-align: center;
+    background-color: brown;
+}
+
+tr{
+    text-align: center 20px;
+    background-color: aliceblue;
+    
+}
