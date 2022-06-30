@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/index.css">
+    <title>Crea tu cuenta Zuu</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="titulo"> Zuu Woof sac.</h1>
+        <hr>
+        <h2>Te invitamos  a formar parte de nuestra familia, ingresando tus datos para contarte novedades</h2>
+        
+        </header>
+        <div class="formulario">
+        <h1 class="sub1">CREAR UNA CUENTA</h1>
+        <p>Escribe tu correo electronico</p>
+        <input type="email" name="" id="email">
+        <label>Email</label>
+        <p>Escriba su contraseña</p>
+        <input type="password" name="" id="pass">
+        <div class="caracteres">Tú contraseña debe tener minimo 6 caracteres y al menos una letra mayúscula o miniscula y un número</div>
+        <button id="registrar">Registrarse</button>
+        <hr>
+        <h1 class="sub2">INICIAR SESIÓN</h1>
+        <p>Si ya te registraste ingresa tus datos para ingresar a la pagina</p>
+        <p>Ingresa tu correo</p>
+        <input type="email" name="" id="email1">
+        <label>Email</label>
+        <p>Escriba su contraseña</p>
+        <input type="password" name="" id="pass1">
+        <div class="caracteres">contraseña</div>
+        <button id="iniciar">INICIAR</button>
+    </div>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-auth.js";
+
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+    
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAKqD6ULhTrOAXx7-wIRlqN1p2A0ESVAjA",
+            authDomain: "clientes-aa014.firebaseapp.com",
+            projectId: "clientes-aa014",
+            storageBucket: "clientes-aa014.appspot.com",
+            messagingSenderId: "601178487898",
+            appId: "1:601178487898:web:dbd36cb8ad31b6d5aaec63"
+        };
+    
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        //Creamos un evento para que funcione el boton 
+        document.getElementById("registrar").addEventListener("click", function(){
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("pass").value;
+
+        createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+            // Se guarda la informacion
+            const user = userCredential.user;
+            console.log("Cuenta creada")
+            // ...
+        })
+        .catch((error) => {
+            //aparecera un error
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorCode + errorMessage)
+            // ..
+        });
+        })
+
+        //Creamos el evento para inciar sesion 
+        document.getElementById("iniciar").addEventListener ("click", function(){
+            //Constante para tomar lo valores de los ID
+            const email1= document.getElementById("email1").value;
+            const pass1= document.getElementById("pass1").value;
+
+            signInWithEmailAndPassword(auth, email1, pass1)
+            .then((userCredential) => {
+                // Signed in
+                const user = userCredential.user;
+                window.open("/bienvenido.html","oficial")
+                console.log("Tu cuenta existe")
+                // ...      
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                console.log("No has llenado correctamente")
+            });
+        })
+
+    </script>
+
+    
+</body>
+</html>
