@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/bienvenido.css">
+    <title>Bienvenido</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <enlace rel="preconectar" href="https://fonts.googleapis.com">
+        <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+</head>
+<body>
+  <header class="header">
+    <div class="contenedor head">
+        <h1 class="titulo">Zuu Woof </h1>
+        <p class="copy"> ¡Ya formas parte de nuestra comunidad¡
+        </p>
+    </div>
+    </header>
+    <main>
+        <section class="contenedor" id="servicio">
+            <h2 class="subtitulo">Sobre Nuestra Compañia</h2>
+            <div class="contenedor-servicio">
+            <img src="/imagenes/pequeños-perritos-del-grupo-114075041.jpg" alt="">
+            <div class="checklist-servicio"> 
+                <div class="service">
+                <h3 class="n-service"><span class="number">1</span>Nuestra Compañia</h3>
+                <p> La mejor tecnologia y los mejores equipos en manos de profesionales </p>
+                </div>
+                <div class="service">
+                <h3 class="n-service"><span class="number">2</span>Nuestros Servicios</h3>
+                <p> Las mejores fotos para tu mascota uwu </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="gallery" id="galeria">
+        <div class="contenedor">
+            <h2 class="subtitulo">Galeria</h2>
+            <div class="contenedor-galeria">
+            <img src="/imagenes/1.jpg" alt="" class="img-galeria">
+            <img src="/imagenes/2.jpg" alt="" class="img-galeria">
+            <img src="/imagenes/3.jpg" alt="" class="img-galeria">
+            <img src="/imagenes/4.jpg" alt="" class="img-galeria">
+            <img src="/imagenes/5.jpg" alt="" class="img-galeria">
+            <img src="/imagenes/6.jfif" alt="" class="img-galeria">
+            <img src="/imagenes/7.jpg_large" alt="" class="img-galeria">
+            <img src="/imagenes/nalita.jpg" alt="" class="img-galeria">
+        </div>
+
+            </div>
+        </div>
+</main>
+<footer id="contacto">
+    <div class="contenedor footer-content">
+    <div class="contact-us">
+    <h6 class="brand">Maria Fernanda Lidia Cisneros Zuñiga 
+        fernandalidia99@hotmail.com
+    </h6> 
+    </div>
+    <div class="social media">
+    <a href="https://www.facebook.com/FernandaCisneros99/" class="social-media-icon">
+        <i class='bx bxl-facebook'></i>
+    </a>
+    
+    <a href="https://twitter.com/FerSehun" class="social-media-icon">
+        <i class='bx bxl-twitter'></i>
+    </a>
+    
+    <a href="https://www.instagram.com/mariafernannda99/" class="social-media-icon">
+        <i class='bx bxl-instagram'></i>
+    </a>
+    </div>
+    </div>
+    <div class="line"></div>
+</footer>
+
+
+    <button id="salir"> SALIR</button>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+        import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyAKqD6ULhTrOAXx7-wIRlqN1p2A0ESVAjA",
+          authDomain: "clientes-aa014.firebaseapp.com",
+          projectId: "clientes-aa014",
+          storageBucket: "clientes-aa014.appspot.com",
+          messagingSenderId: "601178487898",
+          appId: "1:601178487898:web:dbd36cb8ad31b6d5aaec63"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        document.getElementById("salir").addEventListener("click", function(){
+        signOut(auth).then(() => {
+            window.open("/index.html")
+        }).catch((error) => {
+        // An error happened.
+        });
+        })
+      </script>
+</body>
+</html>
